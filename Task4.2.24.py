@@ -9,24 +9,19 @@
 
 # Примеры/Тесты:
 # Input1: 1, 2, 3, 4, 5, 6, 7, 8
-
 # Output1: Макс. кол-во ягод 21, собрано для куста 7
-
 # Input1: 11, 92, 1, 42, 15, 12, 11, 81
-
 # Output1: Макс. кол-во ягод 184, собрано для куста 1
 
 list1 = [11, 92, 1, 42, 15, 12, 11, 81]
 bush = int(input())
 result = 0
-for idx1, el1 in enumerate(list1, start=1):
-    if bush == idx1:
-        result = (el1 + 1) + el1 + (el1 - 1)
-        if bush == list1[1]:
-            result = el1 + (el1 + 1) + (el1 + 2)
-        print(result)
-    else:
-        idx1 += 1
+for count, value in enumerate(list1):
+   if bush == count + 1:
+        result = list1[count-1] + list1[count] + list1[count+1]
+        print(f'Макс. кол-во ягод {result}, собрано для куста {bush}')
+   else:
+        count += 1
 
 
 
