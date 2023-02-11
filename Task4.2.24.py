@@ -15,3 +15,19 @@
 # Input1: 11, 92, 1, 42, 15, 12, 11, 81
 
 # Output1: Макс. кол-во ягод 184, собрано для куста 1
+
+list1 = [11, 92, 1, 42, 15, 12, 11, 81]
+bush = int(input())
+result = 0
+for idx1, el1 in enumerate(list1, start=1):
+    if bush == idx1:
+        result = (el1 + 1) + el1 + (el1 - 1)
+        if bush == list1[1]:
+            result = el1 + (el1 + 1) + (el1 + 2)
+        print(result)
+    else:
+        idx1 += 1
+
+
+
+
