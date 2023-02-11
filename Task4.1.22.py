@@ -20,17 +20,3 @@ for idx1, el1 in enumerate(list1.split()):
             idx1 += 1
             idx2 += 1
 print(" ".join(set(list3)))
-
-# text = 'a a a b c a a d c d d'
-# text = text.split()
-# result = ''
-# dict1 = {}
-# for i in range(len(text)):
-#     if text[i] not in dict1:
-#         dict1[text[i]] = 1
-#         result += f'{text[i]} '
-#     else:
-#         dict1[text[i]] += 1
-#         result += f'{text[i]}_{dict1[text[i]] - 1} '
-#
-# print(result)
